@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C41EE9"
+    tools:context=".MainActivity"
+    android:padding="24dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pocet"
+        android:text="Pocet Otaziek"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This will be the queation"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_above="@id/vyber"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:id="@+id/otazka_1"
+        android:textStyle="bold"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/vyber"
+        android:layout_centerInParent="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans A"
+            android:textSize="25dp"
+            android:id="@+id/ans_A"
+            android:textColor="@color/black"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans B"
+            android:textSize="25dp"
+            android:id="@+id/ans_B"
+            android:textColor="@color/black"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans C "
+            android:textSize="25dp"
+            android:id="@+id/ans_C"
+            android:textColor="@color/black"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans D"
+            android:textSize="25dp"
+            android:id="@+id/ans_D"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_btn"
+        android:text="podtvrdit"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/vyber"
+        />
+
+</RelativeLayout>
