@@ -1,7 +1,7 @@
 package com.example.semestralka
 
 object Question {
-    val questions = arrayOf(
+    val otazky = arrayOf(
         //Koľko B spolu definujú nasledujúce direktívy? DB ´Chyba!$´ DW 5 dup (0) DD 1.0		21
         //Koľko B spolu def. nasl. direktívy? DB ´Chyba!´ , 0 DW 4 dup (0) DD 10.0, 11.0, 12.0		27
         //Koľko čísiel so zn. možno zobraziť v jednom B? (v desiatkovej sústave)				256
@@ -28,7 +28,7 @@ object Question {
         "Ktorá z nasledujúcich adries v tvare segment: offset reprezentuje najvyššiu fyz. adresu?"
     )
 
-    val choices = arrayOf(
+    val vyber = arrayOf(
         arrayOf("21","22","23","24"),
         arrayOf("27", "13", "127", "22"),
         arrayOf("256", "255", "258", "396"),
@@ -43,7 +43,7 @@ object Question {
         arrayOf(" E12h","0","ABC4:0300","neni ziadna odpoved")
     )
 
-    val correctAnswers = arrayOf(
+    val spravneOdpovede = arrayOf(
         "21",
         "27",
         "256",

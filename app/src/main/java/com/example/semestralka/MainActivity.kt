@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var editTextPhoneNumber: EditText
 
     private var score = 0
-    private val totalQuestion = Question.questions.size
+    private val totalQuestion = Question.otazky.size
     private var currentQuestionIndex = 0
     private var selectedAnswer = ""
 
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val clickedButton = view as Button
         if (clickedButton.id == R.id.submit_btn) {
-            if (selectedAnswer == Question.correctAnswers[currentQuestionIndex]) {
+            if (selectedAnswer == Question.spravneOdpovede[currentQuestionIndex]) {
                 score++
             }
             currentQuestionIndex++
@@ -79,11 +79,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             return
         }
 
-        questionTextView.text = Question.questions[currentQuestionIndex]
-        ansA.text = Question.choices[currentQuestionIndex][0]
-        ansB.text = Question.choices[currentQuestionIndex][1]
-        ansC.text = Question.choices[currentQuestionIndex][2]
-        ansD.text = Question.choices[currentQuestionIndex][3]
+        questionTextView.text = Question.otazky[currentQuestionIndex]
+        ansA.text = Question.vyber[currentQuestionIndex][0]
+        ansB.text = Question.vyber[currentQuestionIndex][1]
+        ansC.text = Question.vyber[currentQuestionIndex][2]
+        ansD.text = Question.vyber[currentQuestionIndex][3]
     }
 
     private fun finishQuiz() {
@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         AlertDialog.Builder(this)
             .setTitle(passStatus)
-            .setMessage("Studen s menom  a priezviskom  dostal za test $score spravnych odpovedi  z $totalQuestion")
+            .setMessage("Student s menom  a priezviskom  dostal za test $score spravnych odpovedi  z $totalQuestion")
             .setPositiveButton("Spustit nanovo?") { dialogInterface, i -> restartQuiz() }
             .setCancelable(false)
             .show()

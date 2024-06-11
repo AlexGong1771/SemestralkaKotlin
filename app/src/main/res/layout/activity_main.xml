@@ -19,7 +19,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This will be the queation"
+        android:text="Tu bude otazka"
         android:textColor="@color/white"
         android:textSize="24dp"
         android:layout_above="@id/vyber"
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:backgroundTint="@color/white"
-            android:text="Ans A"
+            android:text="Odpoved A"
             android:textSize="25dp"
             android:id="@+id/ans_A"
             android:textColor="@color/black"/>
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:backgroundTint="@color/white"
-            android:text="Ans B"
+            android:text="Odpoved B"
             android:textSize="25dp"
             android:id="@+id/ans_B"
             android:textColor="@color/black"/>
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:backgroundTint="@color/white"
-            android:text="Ans C "
+            android:text="Odpoved C"
             android:textSize="25dp"
             android:id="@+id/ans_C"
             android:textColor="@color/black"/>
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:backgroundTint="@color/white"
-            android:text="Ans D"
+            android:text="Odpoved D"
             android:textSize="25dp"
             android:id="@+id/ans_D"
             android:textColor="@color/black"/>
