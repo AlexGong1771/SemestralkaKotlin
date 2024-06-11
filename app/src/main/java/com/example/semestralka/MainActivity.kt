@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         ansD.setOnClickListener(this)
         submitBtn.setOnClickListener(this)
 
-        totalQuestionsTextView.text = "Pocet Otaziek : $totalQuestion"
+        totalQuestionsTextView.text = "Pocet Otazok : $totalQuestion"
 
         loadNewQuestion()
     }
